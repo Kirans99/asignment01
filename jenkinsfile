@@ -11,6 +11,7 @@ pipeline {
                         sh "echo STEGE-2 executes if branch is master"
                     }
                 }
+                
                 stage('STAGE-2'){
                     when {
                         branch 'master'
