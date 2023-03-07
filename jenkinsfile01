@@ -9,7 +9,7 @@ pipeline {
                     }
                     steps{
                          sh'''
-                            sleep 6
+                            sleep 3
                             echo "STEGE-2 executes if branch is master"
                          '''
                     }
@@ -21,7 +21,7 @@ pipeline {
                     }
                     steps{
                          sh'''
-                            sleep 6
+                            sleep 3
                             echo "STEGE-2 executes if branch is master"
                          '''
                     }
