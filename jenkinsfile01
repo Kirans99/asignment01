@@ -6,23 +6,27 @@ pipeline {
                 stage('STAGE-1') {
                     when {
                         branch "main"
-                         }
+                    }
                     steps{
-                        sh "echo STEGE-2 executes if branch is main"
-                         }
-                     }
-                
+                         sh'''
+                            sleep 6
+                            echo "STEGE-2 executes if branch is master"
+                         '''
+                    }
+                }
+
                 stage('STAGE-2'){
                     when {
                         branch "main"
-                         }
+                    }
                     steps{
-                        sh "echo STEGE-2 executes if branch is main"
-                         }
-                  }
+                         sh'''
+                            sleep 6
+                            echo "STEGE-2 executes if branch is master"
+                         '''
+                    }
+                }
             }    
         }    
     }
 }
-
-
